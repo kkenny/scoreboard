@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/style.css" type="text/css" />
+  <title>Scoreboard Controller</title>
+</head>
+<body>
+ <center>
+  <table width="300">
+    <tr>
+      <td><center><%= @score_left %></center></td>
+      <td>LEFT</td>
+      <td><center>Period<br /><%= @period %></center></td>
+      <td align="right">RIGHT</td>
+      <td><%= @score_right %></td>
+    </tr><tr>
+      <td>FOULS: <%= @fouls_left %></td>
+      <td><%= @posession_left %></td>
+      <td><center>POSESSION</center></td>
+      <td><%= @posession_right %></td>
+      <td>FOULS: <%= @fouls_right %></td>
+    <tr>
+  </table>
+
+
+  </table>
+
+  <table width="300">
+      <tr>
+	<td colspan="3">LEFT</td>
+	<td>&nbsp;</td>
+	<td colspan="3" align="right">RIGHT</td>
+      </tr><tr>
+	<td><a href="/score/left/plus_1">1pt</a></td>
+	<td><a href="/score/left/plus_2">2pt</a></td>
+	<td><a href="/score/left/plus_3">3pt</a></td>
+	<td>Period + 1</td>
+	<td align="right"><a href="/score/right/plus_1">1pt</a></td>
+	<td align="right"><a href="/score/right/plus_2">2pt</a></td>
+	<td align="right"><a href="/score/right/plus_3">3pt</a></td>
+      </tr><tr>
+	<td><a href="/fouls/left/plus_1">FOUL++</a></td>
+	<td colspan="2"><a href="/posession/left">POSESSION_L</a></td>
+	<td>&nbsp;</td>
+	<td colspan="2"><a href="/posession/right">POSESSION_R</a></td>
+	<td><a href="/fouls/right/plus_1">FOUL++</a></td>
+      </tr>
+  </table>
+  <table width="300"><tr><td><a href="/initialize">Initialize Data</a></td></tr></table>
+ </center>
+</body>
+</html>
