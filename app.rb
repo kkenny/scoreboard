@@ -89,6 +89,7 @@ end
 # FOUL ROUTES
 
 %w{right left}.each do |side|
+  # This is fixed in another branch
   get "/fouls/#{side}/plus_1" do
 
     fn = "fouls_#{side}.txt"
