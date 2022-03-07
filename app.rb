@@ -30,6 +30,7 @@ get '/' do
   @posession_right = f.read
   f.close
 
+  # This should be left.
   f = File.open('bonus_right.txt', 'r')
   @bonus_right = f.read
   f.close
