@@ -89,7 +89,7 @@ end
 # FOUL ROUTES
 
 %w{right left}.each do |side|
-  get '/fouls/right/plus_1' do
+  get "/fouls/#{side}/plus_1" do
 
     fn = "fouls_#{side}.txt"
 
