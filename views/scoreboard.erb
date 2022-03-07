@@ -9,17 +9,18 @@
  <center>
   <table width="300">
     <tr>
-      <!-- add collspan 2 and bonus to table -->
-      <td><center><%= @score_left %></center></td>
+      <td colspan=2><center><%= @score_left %></center></td>
       <td>LEFT</td>
       <td><center>Period<br /><%= @period %></center></td>
       <td align="right">RIGHT</td>
-      <td><%= @score_right %></td>
+      <td colspan=2><%= @score_right %></td>
     </tr><tr>
       <td>FOULS: <%= @fouls_left %></td>
+      <td><%= @bonus_left %></td>
       <td><%= @posession_left %></td>
       <td><center>POSESSION</center></td>
       <td><%= @posession_right %></td>
+      <td><%= @bonus_right %></td>
       <td>FOULS: <%= @fouls_right %></td>
     <tr>
   </table>

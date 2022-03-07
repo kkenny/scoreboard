@@ -31,8 +31,8 @@ get '/' do
   f.close
 
   # This should be left.
-  f = File.open('bonus_right.txt', 'r')
-  @bonus_right = f.read
+  f = File.open('bonus_left.txt', 'r')
+  @bonus_left = f.read
   f.close
 
   f = File.open('bonus_right.txt', 'r')
@@ -90,6 +90,7 @@ end
 # FOUL ROUTES
 
 %w{right left}.each do |side|
+  # This is fixed in another branch
   get "/fouls/#{side}/plus_1" do
 
     fn = "fouls_#{side}.txt"
