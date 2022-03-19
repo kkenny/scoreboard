@@ -1,0 +1,7 @@
+dbname = 'scoreboard'
+dbuser = 'scoreboard'
+dbpass = 'scoreboard'
+dbhost = 'pgsql-server.local'
+
+
+db = PG.connect :dbname => dbname, :user => dbuser, :password => dbpass, :host => dbhost
