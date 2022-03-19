@@ -1,5 +1,9 @@
 require 'rubygems'
 require 'sinatra'
+require 'pg'
+
+set :bind, '0.0.0.0'
+set :port, 9999
 
 get '/' do
   f = File.open('score_left.txt', 'r')
@@ -60,6 +64,9 @@ get '/initialize' do
 
   redirect '/'
 end
+
+# TEAM ROUTES
+
 
 # SCORE ROUTES
 
