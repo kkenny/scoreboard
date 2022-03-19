@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'pg'
+require 'uuidtools'
 
 set :bind, '0.0.0.0'
 set :port, 9999
