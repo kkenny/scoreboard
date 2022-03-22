@@ -1,0 +1,18 @@
+<html><head><title>New Player</title></head>
+
+
+<body>
+<form method="POST" action="/players/new/submit" id="newplayer">
+  <p><input id="player_fname" type="text" placeholder="Player First Name" name="player_fname"></p>
+  <p><input id="player_lname" type="text" placeholder="Player Last Name" name="player_lname"></p>
+  <p><input id="player_number" type="text" placeholder="Player Number" name="player_number"></p>
+  <p><input id="player_year" type="text" placeholder="Player Year" name="player_year"></p>
+  <p><label for="team">Team</label>
+    <select name="team" id="team">
+      <% t.each do |team| %>
+	<option value="<%= team[:team_id] %>"><%= team[:team_name] %></option>
+      <% end %>
+    </select></p>
+  <p><button id="button" type="submit" form="newplayer" value="Submit">Add Player</button></p>
+</form>
+</body></html>

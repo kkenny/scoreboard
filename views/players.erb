@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>PLAYERS</title>
+  <link rel="stylesheet" href="/style.css" type="text/css" />
+</head>
+<body>
+
+<div align="right">
+  <a href="/players/new">New Player</a>
+</div>
+
+<table>
+<tr>
+  <td>Player Name</td><td>Player Number</td><td>Player Year</td><td>Player Team</td><td>Player School</td><td>Player UUID</td>
+</tr>
+<% p.each do |player| %>
+  <tr>
+    <td><%= player[:player_fname] %> <%= player[:player_lname] %></td>
+    <td><%= player[:player_number] %></td>
+    <td><%= player[:player_year] %></td>
+    <td><%= player[:player_team] %></td>
+    <td><%= player[:player_school] %></td>
+    <td><%= player[:player_id] %></td>
+  </tr>
+<% end %>
+</table>
+
+</body>
+</html>

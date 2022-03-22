@@ -1,0 +1,26 @@
+<html>
+<head>
+  <title>TEAMS</title>
+  <link rel="stylesheet" href="/style.css" type="text/css" />
+</head>
+<body>
+
+<div align="right">
+  <a href="/teams/new">New Team</a>
+</div>
+
+<table>
+<tr>
+  <td>Team Name</td><td>Team Year</td><td>Team UUID</td>
+</tr>
+<% t.each do |team| %>
+  <tr>
+    <td><%= team[:team_name] %></td>
+    <td><%= team[:team_year] %></td>
+    <td><%= team[:team_id] %></td>
+  </tr>
+<% end %>
+</table>
+
+</body>
+</html>
