@@ -3,3 +3,5 @@
 *.txt
 *.lock
 .ruby-version
+config.rb
+db_config.yml
